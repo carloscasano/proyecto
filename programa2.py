@@ -13,7 +13,7 @@ import datetime  as dt
 # CONFIGURANDO LA PÁGINA
 #********************************************
 st.set_page_config(page_title = 'Proyecto IA',
-                  page_icon  = 'moneybag:',
+                  page_icon  = 'email:',
                   layout     = 'wide'
                   )
 #********************************************
