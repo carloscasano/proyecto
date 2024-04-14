@@ -4,7 +4,6 @@ Created on Sat Apr 13 16:14:59 2024
 
 @author: Usuario
 """
-#Nota: 13.04.2024 Carlos Casaño
 #Librerias
 import streamlit as st
 import pandas    as pd
