@@ -12,8 +12,8 @@ import datetime  as dt
 
 #Configuracndo la página
 st.set_page_config(page_title = 'Proyecto IA',
-                  page_icon  = 'moneybag:',
+                  page_icon  = 'chart_increasing:',
                   layout     = 'wide'
                   )
 
-st.write('Programa3')
+st.write('Programa3-version2')
