@@ -9,7 +9,13 @@ import streamlit as st
 import pandas    as pd
 import numpy     as np
 import datetime  as dt
-
+#********************************************
+# CONFIGURANDO LA PÁGINA
+#********************************************
+st.set_page_config(page_title = 'Proyecto IA',
+                  page_icon  = 'moneybag:',
+                  layout     = 'wide'
+                  )
 #********************************************
 # TITULO DEL DASHBOARDS
 #********************************************
