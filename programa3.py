@@ -47,13 +47,12 @@ with st.sidebar:
 #****************************************************
 #Extracción de datos
 @st.cache_data
-def leer_data(xarchivo,xhoja):
-    df0 = pd.read_excel(xarchivo, sheet_name=xhoja)
-    return df0
+def leer_archivo(xarchivo: str,xhoja: str) -> pd.DataFrame:
+    return pd.read_excel(xarchivo, sheet_name=xhoja)
 #Leer los datos
 A="https://www.datosabiertos.gob.pe/sites/default/files/Catalogo1960_2023.xlsx"
 H="Catalogo1960_2023"
-df  = leer_data(A,H)
+df  = leer_archivo(A,H)
 #Cambiando de nombre a las columnas de ubicación
 df.rename(columns={'LATITUD' :'latitude'  ,
                    'LONGITUD':'longitude'},
