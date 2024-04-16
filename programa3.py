@@ -7,11 +7,11 @@ Created on Sat Apr 13 21:45:41 2024
 import datetime  as dt
 import streamlit as st
 import pandas    as pd
-import pip       as pp
-import openpyxl
+import pip
+#import openpyxl
 #import numpy     as np
-pp.main(['install','openpyxl'])
-#pip install openpyxl
+pip.__main__(['install','openpyxl'])
+#pip install  openpyxl
 #****************************************************
 #Configuracndo la página
 #****************************************************
