@@ -10,7 +10,7 @@ import pandas    as pd
 import pip
 #import openpyxl
 #import numpy     as np
-pip.__main__(['install','openpyxl'])
+pip.main(['install','openpyxl==1.4.7'])
 #pip install  openpyxl
 #****************************************************
 #Configuracndo la página
