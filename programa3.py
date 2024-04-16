@@ -54,8 +54,8 @@ with st.sidebar:
 def leer_archivo(xarchivo: str,xhoja: str): #-> pd.DataFrame:
     return pd.read_excel(xarchivo , sheet_name=xhoja)
 #Leer los datos
-#A="https://www.datosabiertos.gob.pe/sites/default/files/Catalogo1960_2023.xlsx"
-A='Catalogo1960_2023.xlsx' 
+A="https://www.datosabiertos.gob.pe/sites/default/files/Catalogo1960_2023.xlsx"
+#A='Catalogo1960_2023.xlsx' 
 H='Catalogo1960_2023'
 df  = leer_archivo(A, H)
 #Cambiando de nombre a las columnas de ubicación
@@ -67,7 +67,7 @@ df.rename(columns={'LATITUD' :'latitude'  ,
 #Eliminar las filas con valores faltantes
 #df = df.dropna()
 #Mostar el mapa
-B = 1
+B = 2
 if B == 1:
     st.write(df.head(5))
 else:
