@@ -81,7 +81,7 @@ df.rename(columns={'LATITUD' :'latitude'  ,
 
 #Mostar el mapa
 if 1 == 1:
-    st.write(df)
+    st.write(df.head(5))
 else:
   st.map(df,
        latitude  = 'latitude'    ,
