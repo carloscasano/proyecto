@@ -8,9 +8,9 @@ import datetime  as dt
 import streamlit as st
 import pandas    as pd
 import pip       as pp
-import openpyxl
+#import openpyxl
 #import numpy     as np
-pp.main(['install','openpyxl'])
+#pp.main(['install','openpyxl'])
 #pip install openpyxl
 #****************************************************
 #Configuracndo la página
@@ -54,8 +54,9 @@ with st.sidebar:
 def leer_archivo(xarchivo: str,xhoja: str): #-> pd.DataFrame:
     return pd.read_excel(xarchivo) #, sheet_name=xhoja)
 #Leer los datos
-A="https://www.datosabiertos.gob.pe/sites/default/files/Catalogo1960_2023.xlsx"
-H="Catalogo1960_2023"
+#A="https://www.datosabiertos.gob.pe/sites/default/files/Catalogo1960_2023.xlsx"
+A='Catalogo1960_2023.xlsx' 
+H='Catalogo1960_2023'
 df  = leer_archivo(A,H)
 #Cambiando de nombre a las columnas de ubicación
 df.rename(columns={'LATITUD' :'latitude'  ,
