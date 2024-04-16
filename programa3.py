@@ -58,7 +58,8 @@ with st.sidebar:
 #Extracción de datos
 @st.cache_data
 def leer_data():
-  archivo = 'Catalogo1960_2023.xlsx'
+  #archivo = 'Catalogo1960_2023.xlsx'
+  archivo = 'https://www.datosabiertos.gob.pe/sites/default/files/Catalogo1960_2023.xlsx'
   hoja    = 'Catalogo1960_2023'
   df      = pd.read_excel(archivo,
                           sheet_name=hoja)
