@@ -68,10 +68,10 @@ def leer_data():
 #Leer los datos
 df  = leer_data()
 #Cambiando de nombre a las columnas de ubicación
-df.rename(columns={'LATITUD':'latitude' ,
-                        'LONGITUD':'longitude'},
-               inplace = True
-              )
+df.rename(columns={'LATITUD' :'latitude'  ,
+                   'LONGITUD':'longitude'},
+          inplace = True
+         )
 
 #Reemplzar por NaN lños valores vacíos
 #f = df.fillna(np.nan)
@@ -80,7 +80,7 @@ df.rename(columns={'LATITUD':'latitude' ,
 #df = df.dropna()
 
 #Mostar el mapa
-if 1 == 2:
+if 1 == 1:
     st.write(df)
 else:
   st.map(df,
