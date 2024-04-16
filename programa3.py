@@ -30,7 +30,16 @@ st.divider()
 #    SIDEBAR
 #****************************************************
 with st.sidebar:
-    add_slider = st.slider(label     = 'Latitud',
+    add_selectbox = st.selectbox('Departamento: ',
+                                 ['Lima','Piura','Tacna', '...'],
+                                 1)
+    add_selectbox = st.selectbox('Magnitud: ',
+                                 ['1','2','3','4','5','6','7','8'],
+                                 1)
+    add_selectbox = st.selectbox('Profundidad (km)): ',
+                                 ['1','5','10','15','20'],
+                                 1)
+    add_slider    = st.slider(label     = 'Latitud',
         min_value = -23.3000,
         max_value =  -1.5000,
         value     = -12.0453,
