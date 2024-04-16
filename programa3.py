@@ -8,6 +8,7 @@ import datetime  as dt
 import streamlit as st
 import pandas    as pd
 import pip       as pp
+import openpyxl
 #import numpy     as np
 pp.main(['install','openpyxl'])
 #pip install openpyxl
