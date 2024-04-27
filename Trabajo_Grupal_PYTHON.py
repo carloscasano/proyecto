@@ -7,8 +7,9 @@ import datetime       as dt
 import streamlit      as st
 import pandas         as pd
 import numpy          as np
-import plotly.express as px
 import pip
+pip.main(['install','plotly.express'])
+import plotly.express as px
 pip.main(['install','openpyxl==1.4.7'])
 #****************************************************
 #Configuracndo la página
